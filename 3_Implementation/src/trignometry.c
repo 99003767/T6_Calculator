@@ -1,4 +1,4 @@
-#include<trignometry.h>
+#include <trignometry.h>
 float main(){
     float tempt, degree;
     printf("Enter the number \(In degree\)\n");
