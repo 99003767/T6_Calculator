@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-float main();
+void trig();
 float sin_angle(float degree);
 float cos_angle(float degree);
 float tan_angle(float degree);

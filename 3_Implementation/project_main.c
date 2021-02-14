@@ -1,6 +1,7 @@
+#include"trignometry.h"
+#include"calculator_operations.h"
 
-#include <calculator_operations.h>
-#include <trignometry.h>
+
 
 /* Status of the operation requested */
 #define VALID   (1)
@@ -47,13 +48,13 @@ void calculator_menu(void)
         printf("\nThank you. Exiting the Application\n");
         exit(0);
     }
-
-    if(INVALID != valid_operation(calculator_operation))
+if(INVALID != valid_operation(calculator_operation))
     {
         printf("\n\tEnter your Numbers with space between them\n");
         //__fpurge(stdin);
         scanf("%d %d", &calculator_operand1, &calculator_operand2);
     }
+    
     else
     {
         printf("\n\t---Wrong choice---\nEnter to continue\n");
@@ -101,52 +102,8 @@ void calculator_menu(void)
             getchar();
             break;
             case TRIGNOMETRY:
-           printf("Enter the number \(In degree\)%f\n",
-            degree);
-            int tempt=0;
-             tempt = degree;
-    
-    
-    if(degree<0)
-    {
-        printf("Enter valid input");
-        return 0;
-        
-    }
-    if(degree>360)
-    {
-        printf("Enter valid input");
-        return 0;
-    }
-    if(degree == 90.00 || degree == 270.00)
-    {
-    degree = (degree * 3.14159265359 / 180);
-    printf("sin\(%.2f\) = %1.2f\n",tempt,sin_angle(degree)) ;
-    printf("cos\(%.2f\) = %1.2f\n",tempt, cos_angle(degree));
-     printf("cosec\(%.2f\) = %1.2f\n",tempt, cosec_angle(degree));
-    printf("cot\(%.2f\) = %1.2f\n",tempt, cot_angle(degree));
-    printf("Tan and sec not defined");
-    }
-    if(degree == 0.00 || degree == 180.00 || degree == 360)
-    {
-    degree = (degree * 3.14159265359 / 180);
-    printf("sin\(%.2f\) = %1.2f\n",tempt,sin_angle(degree)) ;
-    printf("cos\(%.2f\) = %1.2f\n",tempt, cos_angle(degree));
-    printf("tan\(%.2f\) = %1.2f\n",tempt, tan_angle(degree));
-     printf("sec\(%.2f\) = %1.2f\n",tempt, sec_angle(degree));
-    printf("Cot and cosec not defined");
-    }
-    
-    else
-    {
-         degree = (degree * 3.14159265359 / 180);
-        printf("sin\(%.2f\) = %1.2f\n",tempt,sin_angle(degree)) ;
-    printf("cos\(%.2f\) = %1.2f\n",tempt, cos_angle(degree));
-     printf("tan\(%.2f\) = %1.2f\n",tempt, tan_angle(degree));
-     printf("cosec\(%.2f\) = %1.2f\n",tempt, cosec_angle(degree));
-    printf("sec\(%.2f\) = %1.2f\n",tempt, sec_angle(degree));
-    printf("cot\(%.2f\) = %1.2f\n",tempt, cot_angle(degree));
-    }
+
+              trig();
             
             
              

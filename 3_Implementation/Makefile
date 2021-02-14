@@ -6,8 +6,7 @@ BUILD = build
 
 # All source code files
 SRC = project_main.c\
-src/calculator_operations.c
-SRC = project_main.c\
+src/calculator_operations.c\
 src/trignometry.c
 
 # All test source files
@@ -18,8 +17,7 @@ unity/unity.c\
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).exe
 
 # All include folders with header files
-INC	= -Iinc\calculator_operations.h\
-INC	= -Iinc\trignometry.h\
+INC	= -Iinc\
 -Iunity\
 
 #Library Inlcudes

@@ -1,85 +1,84 @@
 #include<trignometry.h>
-float main(){
-    float tempt, degree;
-    printf("Enter the number \(In degree\)\n");
-    scanf("%f",&degree);
-    tempt = degree;
+void trig(){
+    int choose;
+    float degree=0,tempt=0;
     
     
-    if(degree<0)
-    {
-        printf("Enter valid input");
-        return 0;
-        
-    }
-    if(degree>360)
-    {
-        printf("Enter valid input");
-        return 0;
-    }
-    if(degree == 90.00 || degree == 270.00)
-    {
-    degree = (degree * 3.14159265359 / 180);
-    printf("sin\(%.2f\) = %1.2f\n",tempt,sin_angle(degree)) ;
-    printf("cos\(%.2f\) = %1.2f\n",tempt, cos_angle(degree));
-     printf("cosec\(%.2f\) = %1.2f\n",tempt, cosec_angle(degree));
-    printf("cot\(%.2f\) = %1.2f\n",tempt, cot_angle(degree));
-    printf("Tan and sec not defined");
-    }
-    if(degree == 0.00 || degree == 180.00 || degree == 360)
-    {
-    degree = (degree * 3.14159265359 / 180);
-    printf("sin\(%.2f\) = %1.2f\n",tempt,sin_angle(degree)) ;
-    printf("cos\(%.2f\) = %1.2f\n",tempt, cos_angle(degree));
-    printf("tan\(%.2f\) = %1.2f\n",tempt, tan_angle(degree));
-     printf("sec\(%.2f\) = %1.2f\n",tempt, sec_angle(degree));
-    printf("Cot and cosec not defined");
-    }
+        printf("chooose trigonometric operation\n");
+        printf("1.Sine\n2.cosine\n3.Tangent\n4.cotangent\n5.Sec\n6.Cosec\n7.back to main menu\n ");
+
+        scanf("%d",&choose);
+        printf("Enter angle value\n");
+        scanf("%f",&degree);
+        tempt=0.0174533*degree;
+        switch(choose)
+        {
+        case 1:
+            sin_angle(tempt);
+            break;
+        case 2:
+            cos_angle(tempt);
+            break;
+        case 3:
+            tan_angle(tempt);
+            break;
+        case 4:
+            cot_angle(tempt);
+            break;
+        case 5:
+            sec_angle(tempt);
+            break;
+        case 6:
+            cosec_angle(tempt);
+            break;
+        default:
+           printf("Choose correct operation\n");
+            break;
+        }
     
-    else
-    {
-         degree = (degree * 3.14159265359 / 180);
-        printf("sin\(%.2f\) = %1.2f\n",tempt,sin_angle(degree)) ;
-    printf("cos\(%.2f\) = %1.2f\n",tempt, cos_angle(degree));
-     printf("tan\(%.2f\) = %1.2f\n",tempt, tan_angle(degree));
-     printf("cosec\(%.2f\) = %1.2f\n",tempt, cosec_angle(degree));
-    printf("sec\(%.2f\) = %1.2f\n",tempt, sec_angle(degree));
-    printf("cot\(%.2f\) = %1.2f\n",tempt, cot_angle(degree));
-    }
-  }
- float sin_angle(float degree)
-{
-    float c=0;
-    c=sin(degree);
-    return c;
 }
-float cos_angle(float degree)
+
+
+
+float sin_angle(float tempt)
 {
-    float c=0;
-    c=cos(degree);
-    return c;
+      printf("\n%lf\n",sin(tempt));
+    return sin(tempt);
+  
 }
-float tan_angle(float degree)
+
+float cos_angle(float tempt)
 {
-    float c=0;
-    c=tan(degree);
-    return c;
-}    
-float cosec_angle(float degree)
-{
-    float c=0;
-    c=1/sin(degree);
-    return c;
+      printf("\n%lf\n",cos(tempt));
+    return cos(tempt);
+  
 }
-float sec_angle(float degree)
+
+float tan_angle(float tempt)
 {
-    float c=0;
-    c=1/cos(degree);
-    return c;
+      printf("\n%lf\n",tan(tempt));
+    return tan(tempt);
+  
 }
-float cot_angle(float degree)
+
+
+float cot_angle(float tempt)
 {
-    float c=0;
-    c=1/tan(degree);
-    return c;
+      printf("\n%lf\n",1.0/tan(tempt));
+    return 1.0/tan(tempt);
+  
+}
+float cosec_angle(float tempt)
+{
+      printf("\n%lf\n",1.0/sin(tempt));
+    return 1.0/sin(tempt);
+  
+}
+
+
+float sec_angle(float tempt)
+{
+      printf("\n%lf\n",1.0/cos(tempt));
+    return 1.0/cos(tempt);
+  
 }
