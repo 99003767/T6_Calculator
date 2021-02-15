@@ -46,7 +46,8 @@ float sum(float num1,float num2)
 
 float sub(float num1,float num2)
 {
-    printf("the sum is %f",num1-num2);
+    printf("the diff4
+     is %f",num1-num2);
     return num1-num2;
 }
 
