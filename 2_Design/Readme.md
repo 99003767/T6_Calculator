@@ -9,13 +9,16 @@ Activity Diagram
                                                
 
 
-                                                Sequencial diagram
+                                                        Sequencial diagram
                                             
 ![HLR_Sequence](https://user-images.githubusercontent.com/78848640/107731559-4dfefb00-6d1c-11eb-8e7a-a88f16fe3a30.PNG)
 
 
 ## Low Level Design 
+                                                         Use case Diagram
+                                                          
+![Use_caseLLR](https://user-images.githubusercontent.com/78848692/107730484-90730880-6d19-11eb-93d4-c83f5558d19e.PNG)
 
---- TBD Structural and Behavioural Diagram
-![FeaturesLevelStructuralDiagram](Link to Pic)
-![FeaturesBehaviouralDiagram](Link to Pic)
+                                                        Sequential Diagram
+                                                           
+![Sequence llr](https://user-images.githubusercontent.com/78848692/107731840-ec8b5c00-6d1c-11eb-995f-32a768d6286e.PNG)
