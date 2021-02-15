@@ -20,7 +20,7 @@ int main()
         printf("<<<<   Temparature Conversion options   >>>>\n");
         printf("       1- Celsius to Kelvin       \n");
         printf("       2- Kelvin to Celsius       \n");
-        printf("       3- Kelvin to Fahrenheit       \n");
+        printf("       3- Kelvin to fahrenheit       \n");
         printf("       4- Fahrenheit to Kelvin       \n");
         printf("       5- Fahrenheit to Celsius       \n");
         printf("       6- Celsius to Fahrenheit       \n");
