@@ -69,5 +69,6 @@ void test_divide(void) {
 }
 void test_trig(void) {
   TEST_ASSERT_EQUAL(1.00, sin(90));
+  TEST_ASSERT_EQUAL(1.154701, sec(30));
   
 }
