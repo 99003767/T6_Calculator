@@ -52,3 +52,6 @@ Activity diagram
 
                                                            Structural Class Diagram LLR
 <img width="620" alt="structural class diagram LLR IMP" src="https://user-images.githubusercontent.com/78869692/107908128-4e490180-6f7b-11eb-8a5b-7c1379c5dc3d.png">
+
+                                                            Behavioral Use case Diagram LLR
+![Behavioural Use case LLR (1)](https://user-images.githubusercontent.com/78869692/107908256-9d8f3200-6f7b-11eb-956e-157f8e1e87f3.png)
