@@ -1,5 +1,5 @@
-#ifndef __CONVERSION_H__
-#define __CONVERSION_H__
+//#ifndef __CONVERSION_H__
+//#define __CONVERSION_H__
 
 
 #include<stdio.h>
@@ -18,4 +18,5 @@ float I_P(float);
 float P_I(float);
 float D_P(float);
 float P_D(float);
-#endif  /* #define __CONVERSION_H__ */
+void conversion();
+//#endif  /* #define __CONVERSION_H__ */

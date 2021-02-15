@@ -26,19 +26,20 @@ int valid_operation(int operation);
 
 
 /* Start of the application */
-int main(int argc, char *argv[])
+void main(int argc, char *argv[])
 {
     printf("\n****Calculator****\n");
     while(1)
     {
         calculator_menu();
     }
+   
 }
 
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Trignometry\n6. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Trignometry\n6. Convert\n7. Exit");
     printf("\n\tEnter your choice\n");
    
      //__fpurge(stdin);
@@ -113,7 +114,14 @@ if(INVALID != valid_operation(calculator_operation))
             //__fpurge(stdin);
             getchar();
             break;
-        case 6:
+
+            case CONVERT:
+            conversion();
+            getchar();
+            break;
+
+
+        case :
             exit(0);
             break;
         default:
