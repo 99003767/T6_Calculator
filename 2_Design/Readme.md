@@ -16,6 +16,10 @@ Activity Diagram
 Sequential Diagram
 ![HLR_Sequence](https://user-images.githubusercontent.com/78848640/107731559-4dfefb00-6d1c-11eb-8e7a-a88f16fe3a30.PNG)
 
+Class Diagram
+![Structural   Class  Hlr New ](https://user-images.githubusercontent.com/78869692/107907607-2311e280-6f7a-11eb-903a-beaa3abc27ef.png)
+
+
                                       
 
 
