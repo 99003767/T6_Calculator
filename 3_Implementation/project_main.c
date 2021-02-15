@@ -1,5 +1,5 @@
 #include"trignometry.h"
-#include"Basic.h"
+#include"calculator_operations.h"
 #include"Conversion.h"
 
 
@@ -17,7 +17,7 @@ int calculator_operand2 = 0;
 int degree=0;
 
 /* Valid operations */
-enum operations{ BASIC,TRIGNOMETRY, EXIT };
+enum operations{ CALCULATOR_OPERATIONS,TRIGNOMETRY, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -66,12 +66,12 @@ if(INVALID != valid_operation(calculator_operation))
     }
     switch(calculator_operation)
     {
-        case BASIC:
-              basic();
+        case 1:
+              calculator();
               getchar();
            
-            break;
-     case TRIGNOMETRY:
+              break;
+        case 2:
 
               trig();
             

@@ -41,24 +41,24 @@ float sum(float num1,float num2)
 
 float sub(float num1,float num2)
 {
-    printf("the sum is %f",num1-num2);
+    printf("the subtraction is %f",num1-num2);
     return num1-num2;
 }
 
 float mul(float num1,float num2)
 {
-    printf("the sum is %f",num1*num2);
+    printf("the multiplication is %f",num1*num2);
     return num1*num2;
 }
 
 float sum(float num1,float num2)
 {
-    printf("the sum is %f",num1/num2);
+    printf("the division is %f",num1/num2);
     return num1/num2;
 }
 float mod(int num1,int num2)
 {
-    printf("the sum is %d",num1%num2);
+    printf("the modulus is %d",num1%num2);
     return num1%num2;
 }
 

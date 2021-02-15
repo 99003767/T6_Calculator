@@ -7,6 +7,7 @@ BUILD = build
 # All source code files
 SRC = project_main.c\
 src/calculator_operations.c\
+src/Conversion.c\
 src/trignometry.c
 
 # All test source files
