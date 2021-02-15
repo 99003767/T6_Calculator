@@ -49,3 +49,6 @@ Activity diagram
  
                                                         Sequential Diagram
 ![LLR_Sequential](https://user-images.githubusercontent.com/78848640/107732010-48ee7b80-6d1d-11eb-8d85-7150aa2e0f76.jpg)
+
+                                                           Structural Class Diagram LLR
+<img width="620" alt="structural class diagram LLR IMP" src="https://user-images.githubusercontent.com/78869692/107908128-4e490180-6f7b-11eb-8a5b-7c1379c5dc3d.png">
