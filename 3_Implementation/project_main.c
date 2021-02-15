@@ -98,5 +98,5 @@ if(INVALID != valid_operation(calculator_operation))
 int valid_operation(int operation)
 {
     /* Check if the operation is a valid operation */
-    return ((ADD <= operation) && (EXIT >= operation)) ? VALID: INVALID;
+    return ((BASIC <= operation) && (EXIT >= operation)) ? VALID: INVALID;
 }

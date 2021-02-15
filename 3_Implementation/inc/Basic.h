@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 void calculator();
 float sum(float,float);
 float sub(float,float);

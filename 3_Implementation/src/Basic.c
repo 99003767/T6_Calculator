@@ -1,6 +1,9 @@
+#include <Basic.h>
+
 void calculator()
 {
  int choice;
+ float n1,n2;
  printf("Enter Choice\n1.Add\n2.Sub\n3.Mul\n.4.Div\n5.Modulus\n") ;
  scanf("%d",&choice);
  switch(choice)
@@ -45,15 +48,15 @@ float sub(float num1,float num2)
     return num1-num2;
 }
 
-float mul(float num1,float num2)
+float mul(int num1,float num2)
 {
     printf("the sum is %f",num1*num2);
     return num1*num2;
 }
 
-float sum(float num1,float num2)
+float div(float num1,float num2)
 {
-    printf("the sum is %f",num1/num2);
+    printf("the division is %f",num1/num2);
     return num1/num2;
 }
 float mod(int num1,int num2)
