@@ -1,9 +1,9 @@
 #include "unity.h"
-#include <calculator_operations.h>
+#include <Basic.h>
 #include"trignometry.h"
 
 /* Modify these two lines according to the project */
-#include <calculator_operations.h>
+#include <Basic.h>
 #define PROJECT_NAME    "Calculator"
 
 /* Prototypes for all the test functions */
