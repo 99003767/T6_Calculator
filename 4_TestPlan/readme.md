@@ -27,5 +27,5 @@
 
 |  L_04       | (a)Height value must be greater then 90 CM and 0.9 Meter
 |             |(b)Weight Must be Greater then 12 Kg and 26.4 LBS             |13/0.81       |20.32KG/M^2   |20.32KG/M^2    |Requirment based   |
-|                                                                              |(160/70^2)*703| 22.96 Kg/M^2  | 22.96 Kg/M^2       And         |
+|                                                                            |(160/70^2)*703| 22.96 Kg/M^2  | 22.96 Kg/M^2       And           |
                                                                                                                              Bounday based     |
