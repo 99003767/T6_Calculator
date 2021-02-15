@@ -20,6 +20,11 @@ Activity Diagram
 
 
 ## Low Level Design 
+
+Activity diagram
+
+![Activity trignometry](https://user-images.githubusercontent.com/78848581/107904849-08883b00-6f73-11eb-928b-cc2dcb936eb5.jpg)
+
                                                          Use case Diagram
                                                           
 ![Use_caseLLR](https://user-images.githubusercontent.com/78848692/107730484-90730880-6d19-11eb-93d4-c83f5558d19e.PNG)
