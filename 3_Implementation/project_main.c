@@ -1,5 +1,5 @@
 #include"trignometry.h"
-#include"calculator_operations.h"
+#include"Basic.h"
 #include"Conversion.h"
 
 
