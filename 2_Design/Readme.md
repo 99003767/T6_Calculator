@@ -55,3 +55,8 @@ Activity diagram
 
                                                             Behavioral Use case Diagram LLR
 ![Behavioural Use case LLR (1)](https://user-images.githubusercontent.com/78869692/107908256-9d8f3200-6f7b-11eb-956e-157f8e1e87f3.png)
+
+
+
+                                                            Behavioral state Diagram
+<img width="712" alt="Behavioral State Diadram LLR" src="https://user-images.githubusercontent.com/78869692/107908409-f78ff780-6f7b-11eb-903b-f142aa3297fb.png">
