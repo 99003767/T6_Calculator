@@ -4,9 +4,9 @@
 
 | **Test ID** | **Description**                                              | **Exp IN** | **Exp OUT** | **Actual Out** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
-|  H_01       |-----Check sine function--------------------------------------|  90--------|---1.00-------|--1.00---------|Requirement based |
-|  H_02       |                Celsius to kelvin                             |      38    |    311.15    |     311.15    |Scenario based    |
-|  H_03       |--------------------------------------------------------------|  ------------|-------------|----------------|Boundary based    |
+|  H_01       |    Check sine function                                       |  90        |   1.00      | 1.00           |Requirement based |
+|  H_02       |                Celsius to kelvin                             |      38    |    311.15   |     311.15     |Scenario based    |
+|  H_03       |     Check sec function                                       |  30        |----1.145-----|-----1.145-----|Boundary based    |
 |  H_04        |(a)In this feature Two input is Required Height and weight.   | 72.57/1.82^2|22.90KG/M^2   ||22.90KG/M^2 |  Requirement base
                                                                                                                                 and 
              |(b)Height must be in CM and Meter.                            | (160/70^2)*703| 22.96Kg?m^2| 22.96Kg?m^2  |  Boundary based|
