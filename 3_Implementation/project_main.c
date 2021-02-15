@@ -17,7 +17,7 @@ int calculator_operand2 = 0;
 int degree=0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE,TRIGNOMETRY, EXIT };
+enum operations{ BASIC,TRIGNOMETRY, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Trignometry\n6. Exit");
+    printf("\n 1.Basic\n 2.Trignometry\n5. Exit");
     printf("\n\tEnter your choice\n");
    
      //__fpurge(stdin);
@@ -66,41 +66,9 @@ if(INVALID != valid_operation(calculator_operation))
     }
     switch(calculator_operation)
     {
-        case ADD:
-            printf("\n\t%d + %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            add(calculator_operand1, calculator_operand2));
-            
-            //__fpurge(stdin);
-            getchar();
-            break;
-        case SUBTRACT:
-            printf("\n\t%d - %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            subtract(calculator_operand1, calculator_operand2));
-            
-            //__fpurge(stdin);
-            getchar();
-            break;
-        case MULTIPLY:
-            printf("\n\t%d * %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            multiply(calculator_operand1, calculator_operand2));
-            
-           // __fpurge(stdin);
-            getchar();
-            break;
-        case DIVIDE:
-            printf("\n\t%d / %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            divide(calculator_operand1, calculator_operand2));
-            
-            //__fpurge(stdin);
-            getchar();
+        case BASIC:
+              basic();
+           
             break;
             case TRIGNOMETRY:
 
@@ -113,7 +81,7 @@ if(INVALID != valid_operation(calculator_operation))
             //__fpurge(stdin);
             getchar();
             break;
-        case 6:
+        case 5:
             exit(0);
             break;
         default:
