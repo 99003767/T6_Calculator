@@ -1,9 +1,9 @@
-#include "BMI.h"
-int main()
+#include <BMI.h>
+void Calc_BMI()
 {
-      int weight;
+    float weight;
    float height;
-    char operator;
+
    
    
     
@@ -11,16 +11,16 @@ int main()
   //  printf(" 2 for enter your height in m");
     
     
-     printf("Press 1 to enter heihgt in Meter and weight in kg \n press  2 for enter your height in CM and weight in kg \n press 3 for enter your weight in LBS and height in cm \n press 4 to enter your weight in lbs and height in meter ");
-    scanf("%c", &operator);
+     //printf("Press 1 to enter heihgt in Meter and weight in kg \n press  2 for enter your height in CM and weight in kg \n press 3 for enter your weight in LBS and height in cm \n press 4 to enter your weight in lbs and height in meter ");
+    //scanf("%c", &operator);
     
    
     
     
-switch(operator)
+/*switch(operator)
 {
     case '1':
-     
+    */ 
      printf("please enter your weight in kg:");
     printf("\n");
     scanf("%d",&weight);
@@ -29,7 +29,7 @@ switch(operator)
     scanf("%f",&height);
     
        BMI(weight,height);
-       break;
+      /* break;
        
        
        case '2':
@@ -75,11 +75,12 @@ switch(operator)
       default:
        printf("enter valid choic");
     
-}
+}*/
 
 }
 
-float BMI(int weight, float height) {
+float BMI(float weight, float height) 
+{
     float result;
     if(weight<=10)
     {
@@ -95,10 +96,10 @@ float BMI(int weight, float height) {
   //  printf("\n");
   //  printf("%d",weight);
  //   printf("\n");
-       result= weight/(float)x;
+       result= weight/x;
        
        
-      printf("%.3f",result);
+      printf("%.3f", result);
       printf("\n");
       
        if(result<18.5)
@@ -120,7 +121,7 @@ float BMI(int weight, float height) {
 }
 
 
-float BMI2(int wig, float height) {
+/*float BMI2(int wig, float height) {
     float result;
     if(wig<=10000)
     {
@@ -242,7 +243,7 @@ float BMI2(int wig, float height) {
        {
            printf("Obses");
        }
-    }
+    }*/
         
         
 

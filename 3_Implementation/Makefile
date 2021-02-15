@@ -8,6 +8,7 @@ BUILD = build
 SRC = project_main.c\
 src/calculator_operations.c\
 src/Conversion.c\
+src/BMI.c\
 src/trignometry.c
 
 # All test source files
@@ -15,7 +16,7 @@ TEST_SRC = src/calculator_operations.c\
 test/test_basic.c\
 unity/unity.c\
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).exe
 
 # All include folders with header files
 INC	= -Iinc\
@@ -27,7 +28,7 @@ INC	= -Iinc\
 INCLUDE_LIBS =
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).exe
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
@@ -39,11 +40,11 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).exe
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
+	./$(PROJECT_OUTPUT).exe
 	
 
 # Document the code using Doxygen

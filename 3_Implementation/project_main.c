@@ -1,9 +1,4 @@
-#include "trignometry.h"
-#include "calculator_operations.h"
-#include "Conversion.h"
-#include "BMI.h"
-
-
+#include <calculator_operations.h>
 
 /* Status of the operation requested */
 #define VALID   (1)
@@ -15,10 +10,9 @@ unsigned int calculator_operation = 0;
 /* Operands on which calculation is performed */
 int calculator_operand1 = 0;
 int calculator_operand2 = 0;
-int degree=0;
 
 /* Valid operations */
-enum operations{ BASIC=1,TRIGNOMETRY, CONVERT, BMI, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, BME, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -30,20 +24,19 @@ int valid_operation(int operation);
 int main(int argc, char *argv[])
 {
     printf("\n****Calculator****\n");
-    while(1)
+    //while(1)
     {
         calculator_menu();
     }
-   
 }
 
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Basic\n2. Trigonometry\n3. Convert\n4. BMI\n5. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. BMI\n6. Exit");
     printf("\n\tEnter your choice\n");
    
-     //__fpurge(stdin);
+     // __fpurge(stdin);
     scanf("%d", &calculator_operation);
 
     if(EXIT == calculator_operation)
@@ -51,45 +44,104 @@ void calculator_menu(void)
         printf("\nThank you. Exiting the Application\n");
         exit(0);
     }
-if(INVALID != valid_operation(calculator_operation))
+
+    if(INVALID != valid_operation(calculator_operation))
     {
-        //printf("\n\tEnter your Numbers with space between them\n");
-        //__fpurge(stdin);
-       // scanf("%d %d", &calculator_operand1, &calculator_operand2);
+        printf("\n\tEnter your Numbers with space between them\n");
+        // __fpurge(stdin);
+        scanf("%d %d", &calculator_operand1, &calculator_operand2);
     }
-    
     else
     {
         printf("\n\t---Wrong choice---\nEnter to continue\n");
-        //__fpurge(stdin);
+        // __fpurge(stdin);
         getchar();
         return;
         
     }
     switch(calculator_operation)
     {
-        case BASIC:
-            calculator();
+        case ADD:
+            printf("\n\t%d + %d = %d\nEnter to continue", 
+            calculator_operand1, 
+            calculator_operand2,
+            add(calculator_operand1, calculator_operand2));
+            
+            // __fpurge(stdin);
+            getchar();
             break;
-        case TRIGNOMETRY:
-
-              trig();
+        case SUBTRACT:
+            printf("\n\t%d - %d = %d\nEnter to continue", 
+            calculator_operand1, 
+            calculator_operand2,
+            subtract(calculator_operand1, calculator_operand2));
             
+            // __fpurge(stdin);
+            getchar();
+            break;
+        case MULTIPLY:
+            printf("\n\t%d * %d = %d\nEnter to continue", 
+            calculator_operand1, 
+            calculator_operand2,
+            multiply(calculator_operand1, calculator_operand2));
             
-            //__fpurge(stdin);
+            // __fpurge(stdin);
+            getchar();
+            break;
+        case DIVIDE:
+            printf("\n\t%d / %d = %d\nEnter to continue", 
+            calculator_operand1, 
+            calculator_operand2,
+            divide(calculator_operand1, calculator_operand2));
+            
+            // __fpurge(stdin);
             getchar();
             break;
 
-        case CONVERT:
-            conversion();
-            getchar();
-            break;
+        case BME:
+        {
+            int result;
+                if(calculator_operand1<=10)
+                 {
+                         printf("Please enter weight greater then 10kg ");
+                    }
+                    if(calculator_operand2<=0.8)
+                    {
+                        printf("please enter height greater then 9 Meter");
+                    }
+                        printf("\n");
+                    
+  //  printf("%.3f",x);
+  //  printf("\n");
+  //  printf("%d",weight);
+ //   printf("\n");
+                                 result= (calculator_operand1)/(calculator_operand2*calculator_operand2);
+       
+       
+                            printf("%d", result);
+                                printf("\n");
+      
+                        if(result<18.5)
+                        {
+                        printf("Underweight");
+                         }
+                            else if(result>18.5&&result<24.9)
+                        {
+                            printf("Normal and healthy Weight");
+                            }
+                    else if(result>25.0 && result<29.9)
+                    {
+                    printf("Over weight");
+                    }
+       else
+       {
+           printf("Obses");
+       }
+        }
 
-        case BMI:
-            BMI();
+        break;
 
-        
-        case EXIT:
+        case 6:
             exit(0);
             break;
         default:
@@ -100,5 +152,5 @@ if(INVALID != valid_operation(calculator_operation))
 int valid_operation(int operation)
 {
     /* Check if the operation is a valid operation */
-    return ((BASIC <= operation) && (EXIT >= operation)) ? VALID: INVALID;
+    return ((ADD <= operation) && (EXIT >= operation)) ? VALID: INVALID;
 }

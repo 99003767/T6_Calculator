@@ -1,4 +1,4 @@
-#include<trignometry.h>
+#include <trignometry.h>
 void trig(){
     int choose;
     float degree=0,tempt=0;
