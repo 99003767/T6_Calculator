@@ -1,6 +1,6 @@
-#include"trignometry.h"
-#include"Basic.h"
-#include"Conversion.h"
+#include "trignometry.h"
+#include "calculator_operations.h"
+#include "Conversion.h"
 
 
 
@@ -52,9 +52,9 @@ void calculator_menu(void)
     }
 if(INVALID != valid_operation(calculator_operation))
     {
-        printf("\n\tEnter your Numbers with space between them\n");
+        //printf("\n\tEnter your Numbers with space between them\n");
         //__fpurge(stdin);
-        scanf("%d %d", &calculator_operand1, &calculator_operand2);
+       // scanf("%d %d", &calculator_operand1, &calculator_operand2);
     }
     
     else
@@ -68,7 +68,7 @@ if(INVALID != valid_operation(calculator_operation))
     switch(calculator_operation)
     {
         case BASIC:
-            Basic();
+            calculator();
             break;
         case TRIGNOMETRY:
 

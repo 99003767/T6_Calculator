@@ -1,4 +1,4 @@
-#include "IBM.h"
+#include "BMI.h"
 int main()
 {
       int weight;

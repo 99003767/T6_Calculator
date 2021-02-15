@@ -1,9 +1,9 @@
 #include "unity.h"
-#include <Basic.h>
+#include "calculator_operations.h"
 #include"trignometry.h"
 
 /* Modify these two lines according to the project */
-#include <Basic.h>
+
 #define PROJECT_NAME    "Calculator"
 
 /* Prototypes for all the test functions */
@@ -69,5 +69,6 @@ void test_divide(void) {
 }
 void test_trig(void) {
   TEST_ASSERT_EQUAL(1.00, sin(90));
+  TEST_ASSERT_EQUAL(1.154701, sec(30));
   
 }
