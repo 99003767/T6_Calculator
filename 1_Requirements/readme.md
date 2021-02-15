@@ -108,7 +108,7 @@ ID DESCRIPTIONS
                              
   |Test case Plane Details|     
   
-  
+  Basic Operations:
 Check if the calculator window maximizes to certain window size.
 Check the if the calculator closes when the close button is pressed or if the exit menu is clicked from file > exit option.
 Check if the help document is accessed from Help > Documentation.
@@ -121,6 +121,7 @@ Check if the brackets keys are working.
 Check if the sum or equal key is working.
 Check if the square and square root key is working.
 
+Trigonometric Operations:
 Check if the sin, cos, tan and cos is operational using the keys.
 Check if the x-1, x!,|x|,x^y and f(x) is operational and works as expected.
 Check if the log key is operational and works as expected.
@@ -129,9 +130,16 @@ Check if the factorial key is working as expected.
 Check if the real and imaginary component keys are working as expected.
 Check if the complex conjugate keys are working as expected.
 
+Coversions:
 Check if value of degree Celsius is greater than -273.15.
 Check if value of degree Fahrenheit is greater than -459.67.
 Check if the value of Kelvin is greater than 0.
+
+Body to Mass Index:
+Check if the value entered in kilogram and in centimeter.
+Check the denominatior value not equals to zero.
+Check if the values entered in meteres are converted to centimeters.
+
                              
                              
                              
