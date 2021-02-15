@@ -41,3 +41,7 @@ Activity diagram
 
                                                         Composite Diagram
 ![LLR_Composite](https://user-images.githubusercontent.com/78848640/107731762-c2d23500-6d1c-11eb-9668-eda1e492c9c3.jpg)
+
+ 
+                                                        Sequential Diagram
+![LLR_Sequential](https://user-images.githubusercontent.com/78848640/107732010-48ee7b80-6d1d-11eb-8d85-7150aa2e0f76.jpg)
