@@ -37,3 +37,7 @@ Activity diagram
                                                         Sequential Diagram
                                                            
 ![Sequence llr](https://user-images.githubusercontent.com/78848692/107731840-ec8b5c00-6d1c-11eb-995f-32a768d6286e.PNG)
+
+
+                                                        Composite Diagram
+![LLR_Composite](https://user-images.githubusercontent.com/78848640/107731762-c2d23500-6d1c-11eb-9668-eda1e492c9c3.jpg)
