@@ -53,7 +53,7 @@ if(INVALID != valid_operation(calculator_operation))
     {
         printf("\n\tEnter your Numbers with space between them\n");
         //__fpurge(stdin);
-        scanf("%d %d", &calculator_operand1, &calculator_operand2);
+        //scanf("%d %d", &calculator_operand1, &calculator_operand2);
     }
     
     else
