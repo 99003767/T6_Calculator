@@ -68,9 +68,10 @@ if(INVALID != valid_operation(calculator_operation))
     {
         case BASIC:
               basic();
+              getchar();
            
             break;
-            case TRIGNOMETRY:
+     case TRIGNOMETRY:
 
               trig();
             
