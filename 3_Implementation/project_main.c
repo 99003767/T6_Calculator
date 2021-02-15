@@ -85,6 +85,7 @@ if(INVALID != valid_operation(calculator_operation))
             break;
 
         case BMI:
+            IBM();
 
         
         case EXIT:
