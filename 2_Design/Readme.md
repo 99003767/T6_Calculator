@@ -2,6 +2,11 @@
 
 ## High Level Design 
 
+Deployment diagram
+
+![HLR deployment](https://user-images.githubusercontent.com/78848581/107904270-5439e500-6f71-11eb-9b95-2bcf0f23df25.jpg)
+
+
 Activity Diagram
                 
 ![Conversion HLR](https://user-images.githubusercontent.com/78848692/107729317-84397c00-6d16-11eb-84d5-3a3bd0786874.PNG)
