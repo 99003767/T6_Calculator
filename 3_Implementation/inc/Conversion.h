@@ -4,7 +4,7 @@
 
 #include<stdio.h>
 #include<math.h>
-float main();
+void conversion();
 float Celsius(float);
 float Kelvin(float);
 float Kelvin_F(float);
@@ -18,5 +18,6 @@ float I_P(float);
 float P_I(float);
 float D_P(float);
 float P_D(float);
-void conversion();
+
+
 //#endif  /* #define __CONVERSION_H__ */

@@ -17,7 +17,7 @@ int calculator_operand2 = 0;
 int degree=0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE,TRIGNOMETRY, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE,TRIGNOMETRY, CONVERT, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -26,7 +26,7 @@ int valid_operation(int operation);
 
 
 /* Start of the application */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     printf("\n****Calculator****\n");
     while(1)
@@ -103,7 +103,7 @@ if(INVALID != valid_operation(calculator_operation))
             //__fpurge(stdin);
             getchar();
             break;
-            case TRIGNOMETRY:
+        case TRIGNOMETRY:
 
               trig();
             
@@ -115,13 +115,13 @@ if(INVALID != valid_operation(calculator_operation))
             getchar();
             break;
 
-            case CONVERT:
+        case CONVERT:
             conversion();
             getchar();
             break;
 
 
-        case :
+        case EXIT:
             exit(0);
             break;
         default:
