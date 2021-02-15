@@ -1,6 +1,7 @@
 #include "trignometry.h"
 #include "calculator_operations.h"
 #include "Conversion.h"
+#include "BMI.h"
 
 
 
@@ -85,7 +86,7 @@ if(INVALID != valid_operation(calculator_operation))
             break;
 
         case BMI:
-            IBM();
+            BMI();
 
         
         case EXIT:
