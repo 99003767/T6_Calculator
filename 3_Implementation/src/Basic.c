@@ -1,4 +1,6 @@
-#include <Basic.h>
+
+
+#include "Basic.h"
 
 void calculator()
 {
@@ -26,7 +28,7 @@ void calculator()
      case 4:
           printf("enter numbers\n");
      scanf("%f%f",&n1,&n2);
-     div(n1,n2);
+     //div(n1,n2);
      break;
      case 5:
      printf("enter the number\n");
@@ -48,20 +50,20 @@ float sub(float num1,float num2)
     return num1-num2;
 }
 
-float mul(int num1,float num2)
+float mul(float num1,float num2)
 {
     printf("the sum is %f",num1*num2);
-    return num1*num2;
+    return (num1*num2);
 }
 
-float div(float num1,float num2)
+/*float div(float num1,float num2)
 {
     printf("the division is %f",num1/num2);
-    return num1/num2;
-}
-float mod(int num1,int num2)
+    return (num1/num2);
+}*/
+/*int mod(int num1,int num2)
 {
     printf("the sum is %d",num1%num2);
-    return num1%num2;
+    return (num1%num2);
 }
-
+*/
