@@ -1,6 +1,6 @@
 #include <Conversion.h>
 
-int main()
+void conversion()
 {
     int P,n,z;
     float C, F, K, T, R, D, Pn, Currency;
