@@ -21,6 +21,11 @@ Activity Diagram
 
 ## Low Level Design 
 
+Class diagram
+
+![class diagram trignometry](https://user-images.githubusercontent.com/78848581/107904938-42594180-6f73-11eb-8115-c95ab5d241ff.jpg)
+
+
 Activity diagram
 
 ![Activity trignometry](https://user-images.githubusercontent.com/78848581/107904849-08883b00-6f73-11eb-928b-cc2dcb936eb5.jpg)
