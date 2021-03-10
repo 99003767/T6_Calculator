@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "calculator_operations.h": "c",
-        "trignometry.h": "c"
-    },
-    "C_Cpp.errorSquiggles": "Disabled"
-}
