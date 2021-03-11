@@ -100,6 +100,11 @@ void calculator_menu(void)
             // __fpurge(stdin);
             getchar();
             break;
+        case TRIGNOMETRY:
+            void trigchoose();
+            
+            getchar();
+            break:
 
         case BME:
         {
