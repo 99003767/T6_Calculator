@@ -1,10 +1,10 @@
 /** 
-* @file calculator_operations.h
+* @file calculator_op.h
 * Calculator application with 4 mathematical operations
 *
 */
-#ifndef __CALCULATOR_OPERATIONS_H__
-#define __CALCULATOR_OPERATIONS_H__
+#ifndef __CALCULATOR_OP_H__
+#define __CALCULATOR_OP_H__
 
 #include <stdio.h>
 #include <stdlib.h>

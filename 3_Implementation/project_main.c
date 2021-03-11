@@ -1,4 +1,7 @@
-#include <calculator_operations.h>
+#include "calculator_op.h"
+#include <BMI.h>
+#include <Conversion.h>
+#include <trignometry.h>
 
 /* Status of the operation requested */
 #define VALID   (1)
