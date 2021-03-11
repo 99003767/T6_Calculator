@@ -1,4 +1,4 @@
-#include "calculator_op.h"
+#include <calculator_op.h>
 #include <BMI.h>
 #include <Conversion.h>
 #include <trignometry.h>
@@ -15,7 +15,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, BME, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, BME, CONVERSION, TRIGONOMETRY, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. BMI\n6. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. BMI\n6. Conversion\n7. trigonometry\n8. Exit");
     printf("\n\tEnter your choice\n");
    
      // __fpurge(stdin);
@@ -144,7 +144,13 @@ void calculator_menu(void)
 
         break;
 
-        case 6:
+        case CONVERSION:
+        conversion();
+            
+            // __fpurge(stdin);
+            getchar();
+            break;
+        
             exit(0);
             break;
         default:
