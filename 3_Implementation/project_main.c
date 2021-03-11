@@ -101,7 +101,7 @@ void calculator_menu(void)
             getchar();
             break;
         case TRIGNOMETRY:
-            void trigchoose();
+            void trig();
             
             getchar();
             break:
