@@ -6,9 +6,9 @@
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|
 |  H_01       |    Check sine function                                       |  90        |   1.00      | 1.00           |
 |  H_02       |                Celsius to kelvin                             |      38    |    311.15   |     311.15     |
-|  H_03       |     Check sec function                                       |  30        |----1.145----|-----1.145----- |
-|  H_03       |     check arithmetic operations                         |  10, 10    |    20       |     20         |  
-|  H_04        |(a)In this feature Two input is Required Height and weight.   | 72.57/1.82^2|22.90KG/M^2   |22.90KG/M^2 |  
+|  H_03       |     Check sec function                                       |  30        |    1.145    |    1.145       |
+|  H_04       |     check arithmetic operations                         |  10, 10    |    20       |     20         |  
+|  H_05        |(a)In this feature Two input is Required Height and weight.   | 72.57/1.82^2|22.90KG/M^2   |22.90KG/M^2 |  
                                                                                                                                  
   
 ## Table no: Low level test plan
