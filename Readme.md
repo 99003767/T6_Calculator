@@ -2,9 +2,9 @@
 
 Visit [Pages for Report -optional](using github.io option)
 
-Build | Cppcheck | Unity | [Git Inspector](using github.io option)
-------|----------|-------|--------------
-      |[![Cppcheck](https://github.com/99003767/T6_Calculator/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/99003767/T6_Calculator/actions/workflows/cppcheck.yml)|
+
+ |[![Cppcheck](https://github.com/99003767/T6_Calculator/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/99003767/T6_Calculator/actions/workflows/cppcheck.yml)|
+ [![Git Inspector](https://github.com/99003767/T6_Calculator/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/99003767/T6_Calculator/actions/workflows/gitinspector.yml)|
 
 
 ## Folder Structure
