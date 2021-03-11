@@ -104,7 +104,7 @@ void calculator_menu(void)
             void trig();
             
             getchar();
-            break:
+            break;
 
         case BME:
         {
