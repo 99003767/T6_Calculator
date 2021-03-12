@@ -1,4 +1,4 @@
-#include "adcd.h"
+#include "BMI.h"
 
 int main()
 {
@@ -80,7 +80,7 @@ switch(operator)
 
 }
 
-float Kg_Meter(int weight, float height) {
+float Kg_Meter(flaot weight, float height) {
  float result;
  if(weight<=10)
  {
@@ -121,7 +121,7 @@ float Kg_Meter(int weight, float height) {
 }
 
 
-float Kg_Cm(int wig, float height) {
+float Kg_Cm(float wig, float height) {
  float result;
  if(wig<=10000)
  {
@@ -163,7 +163,7 @@ float Kg_Cm(int wig, float height) {
 }
  
  
- float Lbs_Cm(int weight, float height) {
+ float Lbs_Cm(float weight, float height) {
  float result;
  if(weight<=24)
  {
@@ -204,7 +204,7 @@ float Kg_Cm(int wig, float height) {
  }
  
  
- float  Lbs_Meter(int weight, float height) {
+ float  Lbs_Meter(float weight, float height) {
  float result;
  if(weight<=24)
  {
