@@ -17,7 +17,7 @@ void test_trig(void);
 void test_trig1(void);
 void conv(void);
 void bmic(void);
-void bmic1(void
+void bmic1(void);
 void bmic2(void);
  void bmic3(void);
  void bmic4(void);
@@ -116,7 +116,7 @@ void bmic2(void)
 }
 void bmic3(void)
 {
-   TEST_ASSERT_EQUAL(obesity, bmicon3(630,5)); 
+   TEST_ASSERT_EQUAL(overwt, bmicon3(700,5)); 
 }
 
  void bmic4(void)
@@ -126,15 +126,15 @@ void bmic3(void)
            
  void bmic5(void)
 {
-   TEST_ASSERT_EQUAL(underwt, bmicon5(510,5)); 
+   TEST_ASSERT_EQUAL(normalwt, bmicon5(510,5)); 
 }          
            
  void bmic6(void)
 {
-   TEST_ASSERT_EQUAL(underwt, bmicon5(634,5)); 
+   TEST_ASSERT_EQUAL(overwt, bmicon5(634,5)); 
 }     
            
 void bmic7(void)
 {
-   TEST_ASSERT_EQUAL(underwt, bmicon5(745,5)); 
+   TEST_ASSERT_EQUAL(obesity, bmicon5(745,5)); 
 }     
