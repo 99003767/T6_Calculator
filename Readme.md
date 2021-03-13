@@ -27,10 +27,10 @@ PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Case
 
 ## Challenges Faced and How Was It Overcome
 
-1. ABC
-2. BCD
-3. ...
-4. ...
+1. Darpan Patil- Test cases were not passing so just fixed the numerical error in the code and then it passed.
+2. Sharath saunshi-
+3. Amit kumar-
+4. Anuj sharma-
 
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
