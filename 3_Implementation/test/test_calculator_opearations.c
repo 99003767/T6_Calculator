@@ -68,7 +68,7 @@ void test_divide(void) {
   TEST_ASSERT_EQUAL(3, divide(2, 2));
 }
 void test_trig(void) {
-  TEST_ASSERT_EQUAL(1.00, sin(90));
-  TEST_ASSERT_EQUAL(1.154701, sec(30));
+  TEST_ASSERT_EQUAL(1.00, sin_angle(90));
+  TEST_ASSERT_EQUAL(1.154701, sec_angle(30));
   
 }
