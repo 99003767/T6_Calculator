@@ -12,14 +12,15 @@ src/BMI.c\
 src/trignometry.c
 
 # All test source files
-TEST_SRC = src/calculator_operations.c\
-test/test_basic.c\
-unity/unity.c\
+TEST_SRC = src/operation.c\
+src/trignometry.c\
+test/test_calculator_opearations.c\
+unity/unity.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).exe
 
 # All include folders with header files
-INC	= -Iinc\
+INC = -Iinc\
 -Iunity\
 
 #Library Inlcudes
@@ -40,26 +41,26 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).exe
+    gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).exe
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).exe
-	
+    ./$(PROJECT_OUTPUT).exe
+    
 
 # Document the code using Doxygen
 #doc:
-#	make -C ./documentation
+#   make -C ./documentation
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
+    gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+    ./$(TEST_OUTPUT)
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+    rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
 
 # Create new build folder if not present
 $(BUILD):
-	mkdir build
+    mkdir build
