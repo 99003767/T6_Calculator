@@ -3,20 +3,24 @@ PROJECT_NAME = Calculator
 
 # Output directory
 BUILD = build
-
+##
 # All source code files
-SRC = project_main.c\
-src/calculator_operations.c\
+SRC = src/operation.c\
+src/trignometry.c\
 src/Conversion.c\
+test/test_calculator_opearations.c\
 src/BMI.c\
-src/trignometry.c
+unity/unity.c
 
 # All test source files
-TEST_SRC = src/calculator_operations.c\
-test/test_basic.c\
-unity/unity.c\
+TEST_SRC = src/operation.c\
+src/trignometry.c\
+src/Conversion.c\
+test/test_calculator_opearations.c\
+src/BMI.c\
+unity/unity.c
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).exe
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
 INC	= -Iinc\
@@ -28,7 +32,7 @@ INC	= -Iinc\
 INCLUDE_LIBS =
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).exe
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
@@ -40,11 +44,11 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).exe
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).exe
+	./$(PROJECT_OUTPUT).out
 	
 
 # Document the code using Doxygen
@@ -54,6 +58,10 @@ run:$(PROJECT_NAME)
 # Build and run the unit tests
 test:$(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
+
+coverageCheck:$(BUILD)
+	gcc -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lm
 	./$(TEST_OUTPUT)
 
 # Remove all the built files, invoke by `make clean`

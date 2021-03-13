@@ -21,16 +21,16 @@ PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Case
 -------|---------|----------------|----------------|---------------|-------------|--------------
 `99003762` | Anuj Sharma  | Conversions    | X No     | X No   |X No   |X No     
 `99003765` | Sharath Saunshi  | Basic conversions     | X No     | X No   |X No   |X No 
-`99003767` | Darpan Patil  | Trignometry    | X No     | X No   |X No   |X No     
+`99003767` | Darpan Patil  | Trignometry    | 0     | 0  |2     |2  
 `99003775` | Amit Kumar  | BMI    | X No     | X No   |X No   |X No     
 
 
 ## Challenges Faced and How Was It Overcome
 
-1. ABC
-2. BCD
-3. ...
-4. ...
+1. Darpan Patil- Test cases were not passing so just fixed the numerical error in the code and then it passed.
+2. Sharath saunshi-
+3. Amit kumar-
+4. Anuj sharma-
 
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
