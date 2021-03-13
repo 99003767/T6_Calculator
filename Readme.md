@@ -21,7 +21,7 @@ PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Case
 -------|---------|----------------|----------------|---------------|-------------|--------------
 `99003762` | Anuj Sharma  | Conversions    | X No     | X No   |X No   |X No     
 `99003765` | Sharath Saunshi  | Basic conversions     | X No     | X No   |X No   |X No 
-`99003767` | Darpan Patil  | Trignometry    | X No     | X No   |X No   |X No     
+`99003767` | Darpan Patil  | Trignometry    | 0     | 0  |2     |20     
 `99003775` | Amit Kumar  | BMI    | X No     | X No   |X No   |X No     
 
 
