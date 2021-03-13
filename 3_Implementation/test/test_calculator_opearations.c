@@ -20,6 +20,7 @@ void bmic(void);
 void bmic1(void
 void bmic2(void);
  void bmic3(void);
+  void bmic4(void);
  
 
 
@@ -49,6 +50,7 @@ int main()
   RUN_TEST(bmic2);
    RUN_TEST(bmic3);
    RUN_TEST(bmic4);
+//    RUN_TEST(bmic4);
   
    
 
@@ -111,5 +113,11 @@ void bmic3(void)
 {
    TEST_ASSERT_EQUAL(obesity, bmicon3(630,5)); 
 }
+
+ void bmic4(void)
+{
+   TEST_ASSERT_EQUAL(underwt, bmicon4(351,5)); 
+}          
+           
   
 
