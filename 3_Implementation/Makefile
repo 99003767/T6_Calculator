@@ -3,7 +3,7 @@ PROJECT_NAME = Calculator
 
 # Output directory
 BUILD = build
-
+##
 # All source code files
 SRC = src/operation.c\
 src/trignometry.c\
