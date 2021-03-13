@@ -20,7 +20,8 @@ void bmic(void);
 void bmic1(void
 void bmic2(void);
  void bmic3(void);
-  void bmic4(void);
+ void bmic4(void);
+ void bmic5(void);
  
 
 
@@ -50,7 +51,7 @@ int main()
   RUN_TEST(bmic2);
    RUN_TEST(bmic3);
    RUN_TEST(bmic4);
-//    RUN_TEST(bmic4);
+   RUN_TEST(bmic5);
   
    
 
@@ -119,5 +120,9 @@ void bmic3(void)
    TEST_ASSERT_EQUAL(underwt, bmicon4(351,5)); 
 }          
            
-  
+ void bmic5(void)
+{
+   TEST_ASSERT_EQUAL(underwt, bmicon5(510,5)); 
+}          
+           
 
