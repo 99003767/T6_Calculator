@@ -44,7 +44,11 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
+<<<<<<< HEAD
 	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).exe
+=======
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out -lm
+>>>>>>> bed33888143e17642bee5c7e9377865d0eae6171
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
@@ -57,7 +61,7 @@ run:$(PROJECT_NAME)
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lm
 	./$(TEST_OUTPUT)
 
 coverageCheck:$(BUILD)
