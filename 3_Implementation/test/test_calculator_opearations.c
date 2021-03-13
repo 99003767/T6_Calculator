@@ -1,7 +1,8 @@
 #include "unity.h"
 #include "operation.h"
 #include"trignometry.h"
-
+#include"Conversion.h"
+#include"BMI.h"
 /* Modify these two lines according to the project */
 
 #define PROJECT_NAME    "Calculator"
@@ -14,6 +15,8 @@ void test_multiply(void);
 void test_divide(void);
 void test_trig(void);
 void test_trig1(void);
+void conv(void);
+void bmic(void);
 
 /* Required by the unity test framework */
 void setUp(){}
@@ -34,6 +37,9 @@ int main()
   RUN_TEST(test_divide);
   RUN_TEST(test_trig);
    RUN_TEST(test_trig1);
+   RUN_TEST(conv);
+   RUN_TEST(bmic);
+
 
   /* Close the Unity Test Framework */
   return UNITY_END();
@@ -71,4 +77,12 @@ void test_trig1(void) {
   TEST_ASSERT_EQUAL(0, cos_angle(90));
   
   
+}
+void conv(void)
+{
+TEST_ASSERT_EQUAL(13.88, P_D(10));  
+}
+void bmic(void)
+{
+  TEST_ASSERT_EQUAL(overwt, bmicon(400,4)); 
 }
