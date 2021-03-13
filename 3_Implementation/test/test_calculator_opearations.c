@@ -17,6 +17,10 @@ void test_trig(void);
 void test_trig1(void);
 void conv(void);
 void bmic(void);
+void bmic1(void);
+void bmic2(void);
+
+
 
 /* Required by the unity test framework */
 void setUp(){}
@@ -39,6 +43,11 @@ int main()
    RUN_TEST(test_trig1);
    RUN_TEST(conv);
    RUN_TEST(bmic);
+   RUN_TEST(bmic1);
+  RUN_TEST(bmic2);
+   RUN_TEST(bmic3);
+   
+
 
 
   /* Close the Unity Test Framework */
@@ -84,5 +93,19 @@ TEST_ASSERT_EQUAL(13.88, P_D(10));
 }
 void bmic(void)
 {
-  TEST_ASSERT_EQUAL(overwt, bmicon(400,4)); 
+  TEST_ASSERT_EQUAL(underwt, bmicon(350,5)); 
 }
+void bmic1(void)
+{
+  TEST_ASSERT_EQUAL(normalwt, bmicon1(500,5)); 
+}
+void bmic2(void)
+{
+   TEST_ASSERT_EQUAL(overwt,bmicon2 (630,5)); 
+}
+void bmic3(void)
+{
+   TEST_ASSERT_EQUAL(obesity, bmicon3(630,5)); 
+}
+  
+
