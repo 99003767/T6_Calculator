@@ -158,6 +158,7 @@ float Celsius(float A)
 
                     printf("Not defined");
                 }
+                return convert;
 }
 
 float Kelvin(float B)
@@ -168,8 +169,10 @@ float Kelvin(float B)
                     convert=(B-273.15);
                     printf("Temperature in Celsius is: %f C\n", convert);
                 }
-                else
+                else{
                     printf("Not defined");
+                }
+                    return convert;
 }
 
 float Kelvin_F(float C)
@@ -180,8 +183,10 @@ float Kelvin_F(float C)
                     convert=(C*(9/5)-459.67);
                     printf("Temperature in Fahrenheit is: %f F\n", convert);
                 }
-                 else
+                 else{
                     printf("Not defined");
+                 }
+                    return convert;
 }
 float F_K(float D)
 {
@@ -191,8 +196,10 @@ float F_K(float D)
                     convert=273.15+ ((D-32)*(9/5));
                     printf("Temperature in Kelvin is: %f K\n", convert);
                 }
-                else
+                else{
                     printf("Not defined");
+                }
+                    return convert;
 }
 float F_C(float E)
 {
@@ -202,8 +209,10 @@ float F_C(float E)
                     convert= ((E-32)*(5/9));
                     printf("Temperature in Celsius: %f C\n", convert);
                 }
-                else
+                else{
                     printf("Not defined");
+                }
+                    return convert;
 }
 float C_F(float G)
 {
@@ -213,8 +222,11 @@ float C_F(float G)
                     convert= ((9/5)*G+32);
                     printf("Temperature in Fahrenheit: %f F\n", convert);
                 }
-                else
+                else{
                     printf("Not defined");
+                }
+
+                    return convert;
 
 }
 
@@ -227,7 +239,10 @@ float I_D(float Z)
                     printf("Amount in dollar= %f $\n", convert);
                 }
                 else
+                {
                     printf("Not defined");
+                }
+                    return convert;
 }
 
 float D_I(float y)
@@ -239,7 +254,11 @@ float D_I(float y)
                     printf("Amount in INR= %f \n", convert);
                 }
                 else
+                {
                     printf("Not defined");
+                }
+                return convert;
+                    
 }
 
 float I_P(float x)
@@ -250,8 +269,10 @@ float I_P(float x)
                     convert= x*0.01;
                     printf("Amount in pounds= %f \n", convert);
                 }
-                else
+                else{
                     printf("Not defined");
+                }
+                return convert;
 }
 
 float P_I(float w)
@@ -262,8 +283,10 @@ float P_I(float w)
                     convert= w/0.01;
                     printf("Amount in INR= %f \n", convert);
                 }
-                else
+                else{
                     printf("Not defined");
+                }
+                return convert;
 }
 
 float D_P(float v)
@@ -274,8 +297,10 @@ float D_P(float v)
                     convert= v*0.72;
                     printf("Amount in Pound= %f \n", convert);
                 }
-                else
+                else{
                     printf("Not defined");
+                }
+                return convert;
 
 }
 
@@ -287,7 +312,9 @@ float P_D(float u)
                     convert= u/0.72;
                     printf("Amount in Dollar= %f \n", convert);
                 }
-                else
+                else{
                     printf("Not defined");
+                }
+                return convert;
 
 }
