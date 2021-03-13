@@ -17,8 +17,10 @@ void test_trig(void);
 void test_trig1(void);
 void conv(void);
 void bmic(void);
-void bmic1(void);
+void bmic1(void
 void bmic2(void);
+ void bmic3(void);
+ 
 
 
 
@@ -46,6 +48,8 @@ int main()
    RUN_TEST(bmic1);
   RUN_TEST(bmic2);
    RUN_TEST(bmic3);
+   RUN_TEST(bmic4);
+  
    
 
 
